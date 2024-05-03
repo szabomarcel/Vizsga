@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppLevesek", "ConsoleAppLevesek\ConsoleAppLevesek.csproj", "{FE583B5D-8F38-4F18-A255-364C24871CC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppPizza", "ConsoleAppPizza\ConsoleAppPizza.csproj", "{44057085-AF97-49DF-9D31-5D8A1DDE0B0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FE583B5D-8F38-4F18-A255-364C24871CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE583B5D-8F38-4F18-A255-364C24871CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE583B5D-8F38-4F18-A255-364C24871CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44057085-AF97-49DF-9D31-5D8A1DDE0B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44057085-AF97-49DF-9D31-5D8A1DDE0B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44057085-AF97-49DF-9D31-5D8A1DDE0B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44057085-AF97-49DF-9D31-5D8A1DDE0B0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

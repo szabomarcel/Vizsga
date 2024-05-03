@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE583B5D-8F38-4F18-A255-364C24871CC2}</ProjectGuid>
+    <ProjectGuid>{44057085-AF97-49DF-9D31-5D8A1DDE0B0C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleAppLevesek</RootNamespace>
-    <AssemblyName>ConsoleAppLevesek</AssemblyName>
+    <RootNamespace>ConsoleAppPizza</RootNamespace>
+    <AssemblyName>ConsoleAppPizza</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -95,8 +95,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adatbazis.cs" />
-    <Compile Include="Leves.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Futar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
