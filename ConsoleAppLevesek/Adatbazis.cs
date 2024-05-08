@@ -17,7 +17,7 @@ namespace ConsoleAppLevesek
             builder.Server = "localhost";
             builder.UserID = "root";
             builder.Password = "";
-            builder.Database = "levesek";
+            builder.Database = "etelek";
             connection = new MySqlConnection(builder.ConnectionString);
             sqlCommand = connection.CreateCommand();
             try
@@ -51,13 +51,13 @@ namespace ConsoleAppLevesek
         internal List<Leves> getAllLeves()
         {
             List<Leves> levesek = new List<Leves>();
-            sqlCommand.CommandText = "SELECT `megnevezes`, `kaloria`, `feherje`, `zsir`, `szenhidrat`, `hamu`, `rost` FROM `levesek`";
+            sqlCommand.CommandText = "SELECT `levesekkod`, `megnevezes`, `kaloria`, `feherje`, `zsir`, `szenhidrat`, `hamu`, `rost` FROM `levesek`";
             kapcsolatNyit();
             using (MySqlDataReader dr = sqlCommand.ExecuteReader())
             {
                 while (dr.Read())
                 {
-                    Leves levese = new Leves(dr.GetString("megnevezes"), dr.GetInt32("kaloria"), dr.GetInt32("feherje"), dr.GetInt32("zsir"), dr.GetInt32("szenhidrat"), dr.GetInt32("hamu"), dr.GetInt32("rost"));
+                    Leves levese = new Leves(dr.GetInt32("levesekkod"), dr.GetString("megnevezes"), dr.GetInt32("kaloria"), dr.GetInt32("feherje"), dr.GetInt32("zsir"), dr.GetInt32("szenhidrat"), dr.GetInt32("hamu"), dr.GetInt32("rost"));
                     levesek.Add(levese);
                 }
             }
