@@ -1,24 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace ConsoleAppDolgozok
+namespace ConsoleAppOrarend
 {
-    internal class Database
+    internal class Adatbazis
     {
         MySqlCommand sqlCommand;
         MySqlConnection connection;
-        public Database()
+        public Adatbazis()
         {
             MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
             builder.Server = "localhost";
             builder.UserID = "root";
             builder.Password = "";
-            builder.Database = "dolgozok";
+            builder.Database = "orarend";
             connection = new MySqlConnection(builder.ConnectionString);
             sqlCommand = connection.CreateCommand();
             try
@@ -47,23 +46,6 @@ namespace ConsoleAppDolgozok
             {
                 connection.Open();
             }
-        }
-
-        internal List<Dolgozok> getAlldolgozok()
-        {
-            List<Dolgozok> dolgozok = new List<Dolgozok>();
-            sqlCommand.CommandText = "SELECT `dolgozoid`, `nev`, `neme`, `reszleg`, `belepesev`, `ber` FROM `dolgozok` WHERE 1";
-            kapcsolatnyit();
-            using (MySqlDataReader dr = sqlCommand.ExecuteReader())
-            {
-                while (dr.Read())
-                {
-                    Dolgozok dolgozo = new Dolgozok(dr.GetInt32("dolgozoid"), dr.GetString("nev"), dr.GetString("neme"), dr.GetString("reszleg"), dr.GetInt32("belepesev"), dr.GetInt32("ber"));
-                    dolgozok.Add(dolgozo);
-                }
-            }
-            kapcsolatzar();
-            return dolgozok;
         }
     }
 }
