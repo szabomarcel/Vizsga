@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDolgozok", "Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppOrarend", "ConsoleAppOrarend\ConsoleAppOrarend.csproj", "{A30F1DC3-A0E4-4E54-AD5F-C9C685E79F84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDolgozok2.0", "ConsoleAppDolgozok2.0\ConsoleAppDolgozok2.0.csproj", "{49512134-DA86-45E2-A0BA-6AD1D9D6DDAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A30F1DC3-A0E4-4E54-AD5F-C9C685E79F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A30F1DC3-A0E4-4E54-AD5F-C9C685E79F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A30F1DC3-A0E4-4E54-AD5F-C9C685E79F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49512134-DA86-45E2-A0BA-6AD1D9D6DDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49512134-DA86-45E2-A0BA-6AD1D9D6DDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49512134-DA86-45E2-A0BA-6AD1D9D6DDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49512134-DA86-45E2-A0BA-6AD1D9D6DDAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
